@@ -22,70 +22,72 @@
         <h1 class="text-info fw-bold text-center">Expense Calculator <span><img class="img-fluid"
                     src="images/dollar-sack.png" alt=""></span></h1>
         <!-- Container Section Starts -->
-        <section class="container row g-5 m-auto">
+        <section class="row g-5 m-auto">
             <!-- Image Added -->
-            <img class="col-md-12 col-lg-6 img-fluid mx-auto" src="images/expence-calculator.jpg"
+            <img class="col-md-12 col-lg-5 img-fluid mx-auto" src="images/expence-calculator.jpg"
                 alt="Calculating Expences">
             <!-- Expense Calculation Starts -->
-            <div class="col-md-12 col-lg-6 bg-light mx-auto py-5">
-                <h4 class="text-center fw-bold">Income</h4>
-                <div class="row my-md-3 m-lg-3">
-                    <label for="" class="col-sm-2 col-form-label">Income:</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="income-value">
-                    </div>
-                </div>
-                <br>
-                <h4 class="text-center fw-bold">Expenses</h4>
-                <div class="row my-md-3 m-lg-3">
-                    <label for="" class="col-sm-2 col-form-label">Food:</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="food-value">
-                    </div>
-                </div>
-                <div class="row my-md-3 m-lg-3">
-                    <label for="" class="col-sm-2 col-form-label">Rent:</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="rent-value">
-                    </div>
-                </div>
-                <div class="row my-md-3 m-lg-3">
-                    <label for="" class="col-sm-2 col-form-label">Clothes:</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="clothes-value">
-                    </div>
-                </div>
-                <br>
-                <div class="text-center">
-                    <button id="calculate-btn" type="button" class="btn btn-primary px-5">Calculate</button>
-                </div>
-                <br>
-                <!-- Warning Message -->
-                <div id="alert-message" class="alert alert-warning" role="alert">
-                    <strong>Warning!</strong> <span id="error-message">You have got some errors.</span>
-                </div>
-                <br>
-                <h4 class="text-center fw-bold">Total Expenses: <span id="total-expenses"></span></h4>
-                <h4 class="text-center fw-bold">Balance: <span id="balance"></span></h4>
-                <br>
-                <div class="row my-md-3 m-lg-3">
-                    <label for="" class="col-sm-2 col-form-label">Save:</label>
-                    <div class="col-sm-5">
-                        <div class="row">
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="save-value">
-                            </div>
-                            <label for="" class="col-sm-2 col-form-label">%</label>
+            <div class="col-md-12 col-lg-5 mx-auto">
+                <div class="bg-light py-5 px-2">
+                    <h4 class="text-center fw-bold">Income</h4>
+                    <div class="row m-xl-3">
+                        <label for="" class="col-sm-2 col-form-label">Income:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="income-value">
                         </div>
                     </div>
-                    <div class="col-sm-5">
-                        <button id="save-btn" type="button" class="btn btn-primary px-5">Save</button>
+                    <br>
+                    <h4 class="text-center fw-bold">Expenses</h4>
+                    <div class="row m-xl-3">
+                        <label for="" class="col-sm-2 col-form-label">Food:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="food-value">
+                        </div>
                     </div>
+                    <div class="row m-xl-3">
+                        <label for="" class="col-sm-2 col-form-label">Rent:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="rent-value">
+                        </div>
+                    </div>
+                    <div class="row m-xl-3">
+                        <label for="" class="col-sm-2 col-form-label">Clothes:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="clothes-value">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <button id="calculate-btn" type="button" class="btn btn-primary px-5">Calculate</button>
+                    </div>
+                    <br>
+                    <!-- Warning Message -->
+                    <div id="alert-message" class="alert alert-warning" role="alert">
+                        <strong>Warning!</strong> <span id="error-message">You have got some errors.</span>
+                    </div>
+                    <br>
+                    <h4 class="text-center fw-bold">Total Expenses: <span id="total-expenses"></span></h4>
+                    <h4 class="text-center fw-bold">Balance: <span id="balance"></span></h4>
+                    <br>
+                    <div class="row m-xl-3">
+                        <label for="" class="col-sm-2 col-form-label">Save:</label>
+                        <div class="col-sm-5">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="save-value">
+                                </div>
+                                <label for="" class="col-sm-2 col-form-label">%</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <button id="save-btn" type="button" class="btn btn-primary px-5">Save</button>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <h4 class="text-center fw-bold">Saving Amount: <span id="saving-amount"></span></h4>
+                    <h4 class="text-center fw-bold">Remaining Balance: <span id="remaining-balance"></span></h4>
                 </div>
-                <br>
-                <br>
-                <h4 class="text-center fw-bold">Saving Amount: <span id="saving-amount"></span></h4>
-                <h4 class="text-center fw-bold">Remaining Balance: <span id="remaining-balance"></span></h4>
             </div>
             <!-- Expense Calculation Ends -->
         </section>
