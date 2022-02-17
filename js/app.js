@@ -109,11 +109,11 @@ document.getElementById("save-btn").addEventListener("click", function () {
     document.getElementById("saving-amount").innerText = savingAmount; //calling function
     if (previousBalance >= savingAmount) {
         document.getElementById("alert-message").style.display = "none";
-        const newBalance = previousBalance - savingAmount;
-        document.getElementById("remaining-balance").innerText = newBalance;
+        const newBalance = previousBalance - savingAmount; //calculating remaining balance
+        document.getElementById("remaining-balance").innerText = newBalance; //setting value in innerText
     }
     else {
         document.getElementById("alert-message").style.display = "block";
-        document.getElementById("remaining-balance").innerText = "Remaining balance can't be calculated";
+        document.getElementById("remaining-balance").innerText = "Remaining balance can't be calculated"; //setting error message in innerText
     }
 })
