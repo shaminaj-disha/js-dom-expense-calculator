@@ -106,7 +106,7 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
 document.getElementById("save-btn").addEventListener("click", function () {
     const previousBalance = calculateBalance(); //calling function
     const savingAmount = calculateSavingAmount(); //calling function
-    document.getElementById("saving-amount").innerText = savingAmount; //calling function
+    document.getElementById("saving-amount").innerText = savingAmount; //setting saving amount value in innerText
     if (previousBalance >= savingAmount) {
         document.getElementById("alert-message").style.display = "none";
         const newBalance = previousBalance - savingAmount; //calculating remaining balance
