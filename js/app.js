@@ -48,7 +48,7 @@ function calculateExpenses() {
         }
         else {
             document.getElementById("alert-message").style.display = "block";
-            return "Please enter a valid positive number in all fields"; //returns error
+            return "Please enter a valid positive number in all input fields"; //returns error
         }
     }
     else {
@@ -84,12 +84,12 @@ function calculateSavingAmount() {
             }
             else {
                 document.getElementById("alert-message").style.display = "block";
-                return "You don't have enough balance to save"; //returns error
+                return "You can't save without proper expense values or balance and when any input field is empty"; //returns error
             }
         }
         else {
             document.getElementById("alert-message").style.display = "block";
-            return "Please enter a valid positive number in all fields"; //returns error
+            return "Please enter a valid positive number in all input fields"; //returns error
         }
     }
     else {
